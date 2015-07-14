@@ -1,0 +1,103 @@
+body {
+  background-color: #F8F8F8;
+}
+
+.hr {
+  margin: 0 auto;
+  width: 5em;
+  height: 0.25em;
+  background-color: #333333;
+}
+
+.logo {
+  z-index: 1;
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  width: 100px;
+  height: 20px;
+  background: #F3F3F3 url("../img/filament.svg") center no-repeat;
+  background-size: 100px;
+}
+
+.skew-cover {
+  width: 100%;
+  height: 5em;
+  background-color: #F3F3F3;
+}
+
+.header {
+  z-index: 1;
+  position: relative;
+}
+
+.header .skew-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+ .header .skew:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  width: 100%;
+  height: 90vh;
+  background: #F3F3F3;
+  z-index: -1;
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
+
+.header .block {
+  text-align: center;
+  height: 100vh;
+}
+ 
+.header .block:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+    
+  /* For visualization 
+  background: #808080; width: 5px;
+  */
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.75em;
+  line-height: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+
+  /* For visualization
+  padding: 10px 15px;
+  border: #a0a0a0 solid 1px;
+  background: #f5f5f5;*/
+ }
+
+ .name {
+  font-size: 4em;
+ }
+
+ .centered .hr {
+    margin-top: 3em;
+    margin-bottom: 3.4em;
+    width: 10em;
+    background-color: #f05a3f;
+ }
+
+ .tagline {
+  font-size: 2em;
+ }
