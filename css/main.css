@@ -130,7 +130,11 @@ h1, h2, h3 {
   background-color: #f05a3f;
 }
 
-.heading-container .hr {
+.work {
+  padding: 2em 0;
+}
+
+.work .heading-container .hr {
   margin-top: 1em;
   margin-bottom: 4em;
 }
@@ -173,6 +177,68 @@ h1, h2, h3 {
   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
   -o-transition: -moz-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
+}
+
+@media only screen and (min-width : 760px) {
+  .work .portfolio {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .work .portfolio a {
+    display: inline-block;
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+
+  .work .portfolio a::before {
+    content: '';
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+
+ .work .portfolio a:nth-child(1)::before {
+    background: #f05a3f url('../img/door.jpg') center no-repeat;
+    background-size: 200px 200px;
+  }
+
+  .work .portfolio a:nth-child(2)::before {
+    background: #f05a3f url('../img/ferris.jpg') center no-repeat;
+    background-size: 200px 200px;
+  }
+
+  .work .portfolio a:nth-child(3)::before {
+    background: #f05a3f url('../img/jump.jpg') center no-repeat;
+    background-size: 200px 200px;
+  }
+
+  .work .portfolio a:nth-child(4)::before {
+    background: #f05a3f url('../img/night.jpg') center no-repeat;
+    background-size: 200px 200px;
+  }
+
+ .work .portfolio a:nth-child(5)::before {
+    background: #f05a3f url('../img/umbrella.jpg') center no-repeat;
+    background-size: 200px 200px;
+  }
+
+  .work .portfolio a:nth-child(6)::before {
+    background: #f05a3f url('../img/windows.jpg') center no-repeat;
+    background-size: 200px 200px;
+  }
+
+  .work .portfolio a:hover::before,
+  .work .portfolio a:focus::before {
+    opacity: 0.75;
+  }
 }
 
 .work .portfolio a:hover span:first-child,
