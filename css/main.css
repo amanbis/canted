@@ -2,11 +2,52 @@ body {
   background-color: #F8F8F8;
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+@media only screen and (min-width : 760px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+}
+
+h1, h2, h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.25em;
+}
+
 .hr {
   margin: 0 auto;
   width: 5em;
   height: 0.25em;
   background-color: #333333;
+}
+
+@media only screen and (min-width : 760px) {
+  .hr {
+    width: 7.5em;
+  }
 }
 
 .logo {
@@ -44,7 +85,7 @@ body {
   top: 0;
   overflow: visible;
   width: 100%;
-  height: 90vh;
+  height: 91vh;
   background: #F3F3F3;
   z-index: -1;
   -webkit-transform: skewY(-5deg);
@@ -75,11 +116,6 @@ body {
   display: inline-block;
   vertical-align: middle;
   width: 80%;
-  text-transform: uppercase;
-  letter-spacing: 0.75em;
-  line-height: 0;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
 
   /* For visualization
   padding: 10px 15px;
@@ -87,17 +123,72 @@ body {
   background: #f5f5f5;*/
  }
 
- .name {
-  font-size: 4em;
- }
+.centered .hr {
+  margin-top: 3em;
+  margin-bottom: 4em;
+  width: 10em;
+  background-color: #f05a3f;
+}
 
- .centered .hr {
-    margin-top: 3em;
-    margin-bottom: 3.4em;
-    width: 10em;
-    background-color: #f05a3f;
- }
+.heading-container .hr {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
 
- .tagline {
-  font-size: 2em;
- }
+.work .portfolio {
+  text-align: center;
+}
+
+.work .portfolio a {
+  display: block;
+  margin: 2em auto;
+  text-decoration: none;
+}
+
+.work .portfolio a span {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.work .portfolio a span:first-child {
+  z-index: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #333333;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.work .portfolio a span:last-child {
+  z-index: -1;
+  padding: 8px 0 0 0  ;
+  font-weight: 700;
+  font-size: 0.875em;
+  color: #f05a3f;
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  -o-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.work .portfolio a:hover span:first-child,
+.work .portfolio a:focus span:first-child {
+  opacity: 0.75;
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -o-transform: translateY(20%);
+  transform: translateY(20%);
+}
+
+.work .portfolio a:hover span:last-child,
+.work .portfolio a:focus span:last-child {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
