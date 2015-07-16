@@ -14,6 +14,10 @@ h3 {
   font-size: 1em;
 }
 
+h4 {
+  font-size: 0.875em;
+}
+
 @media only screen and (min-width : 760px) {
   h1 {
     font-size: 4em;
@@ -28,13 +32,20 @@ h3 {
   }
 }
 
-h1, h2, h3 {
-  font-family: "Josefin Sans", sans-serif;
+h1, h2, h3, h4 {
+  font-family: "Josefin Sans", "Futura", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.25em;
+}
+
+p {
+  font-family: "Playfair Display", "Georgia", serif;
+  font-size: 1.188em;
+  line-height: 1.75;
+  color: #212121;
 }
 
 .hr {
@@ -44,11 +55,26 @@ h1, h2, h3 {
   background-color: #333333;
 }
 
+.heading-container .hr {
+  margin-top: 1em;
+  margin-bottom: 4em;
+}
+
+.spacer {
+  padding: 5em 0 1em 0;
+}
+
 @media only screen and (min-width : 760px) {
   .hr {
     width: 7.5em;
   }
 }
+
+
+/**
+*** Header Section
+**/
+
 
 .logo {
   z-index: 1;
@@ -67,6 +93,19 @@ h1, h2, h3 {
   background-color: #F3F3F3;
 }
 
+.skew:before {
+  content: '';
+  overflow: visible;
+  width: 100%;
+  background: #F3F3F3;
+  z-index: -1;
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
+
 .header {
   z-index: 1;
   position: relative;
@@ -78,21 +117,12 @@ h1, h2, h3 {
   top: 0;
 }
 
- .header .skew:before {
-  content: '';
+.header .skew:before {
   position: absolute;
   left: 0;
   top: 0;
-  overflow: visible;
-  width: 100%;
-  height: 91vh;
-  background: #F3F3F3;
-  z-index: -1;
-  -webkit-transform: skewY(-5deg);
-  -moz-transform: skewY(-5deg);
-  -ms-transform: skewY(-5deg);
-  -o-transform: skewY(-5deg);
-  transform: skewY(-5deg);
+  height: 91.5%;
+  
 }
 
 .header .block {
@@ -130,14 +160,82 @@ h1, h2, h3 {
   background-color: #f05a3f;
 }
 
-.work {
-  padding: 2em 0;
+
+/**
+*** About Section
+**/
+
+
+.profile .icons {
+  max-width: 860px;
+  margin: 0 auto;
+  margin-top: 4em;
+  padding: 0 2em;
 }
 
-.work .heading-container .hr {
-  margin-top: 1em;
-  margin-bottom: 4em;
+.profile .icons h4 {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto 2em auto;
 }
+
+.profile .icons h4::before {
+  content: '';
+  display: block;
+  margin: 0 auto 1.25em auto;
+  width: 100px;
+  height: 32px;
+  background-color: #333333;
+}
+
+.profile .icons h4:nth-child(1)::before {
+  background: #F9F9F9 url("../img/design.svg") center no-repeat;
+  background-size: 32px 32px;
+}
+
+.profile .icons h4:nth-child(2)::before {
+  background: #F9F9F9 url("../img/code.svg") center no-repeat;
+  background-size: 42.064px 32px;
+}
+
+.profile .icons h4:nth-child(3)::before {
+  background: #F9F9F9 url("../img/gears.svg") center no-repeat;
+  background-size: 32.147px 32px;
+}
+
+.profile .icons h4:nth-child(4)::before {
+  background: #F9F9F9 url("../img/leaf.svg") center no-repeat;
+  background-size: 32px 32px;
+}
+
+@media only screen and (min-width : 760px) {
+  .profile .icons h4 {
+    width: 24.5%;
+  }
+}
+
+.profile .about {
+  max-width: 860px;
+  margin: 2em auto 0 auto;
+  padding: 0 3em;
+}
+
+.profile .about p:first-child {
+  font-size: 1.5em;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.profile .about a {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+/**
+*** Portfolio Section
+**/
+
 
 .work .portfolio {
   text-align: center;
