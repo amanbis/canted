@@ -61,7 +61,7 @@ p {
 }
 
 .spacer {
-  padding: 5em 0 1em 0;
+  padding: 10em 0 0 0;
 }
 
 @media only screen and (min-width : 760px) {
@@ -87,11 +87,11 @@ p {
   background-size: 100px;
 }
 
-.skew-cover {
+/*.skew-cover {
   width: 100%;
   height: 5em;
   background-color: #F3F3F3;
-}
+}*/
 
 .skew:before {
   content: '';
@@ -111,17 +111,17 @@ p {
   position: relative;
 }
 
-.header .skew-cover {
+/*.header .skew-cover {
   position: absolute;
   left: 0;
   top: 0;
-}
+}*/
 
 .header .skew:before {
   position: absolute;
   left: 0;
-  top: 0;
-  height: 91.5%;
+  top: -6em;
+  height: 101.25%;
   
 }
 
@@ -165,6 +165,9 @@ p {
 *** About Section
 **/
 
+.profile {
+  padding: 5em 0 0 0;
+}
 
 .profile .icons {
   max-width: 860px;
@@ -356,3 +359,22 @@ p {
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
+
+
+/**
+*** Footer
+**/
+
+
+/** Need to make footer sticky **/
+
+footer .email {
+  padding: 5em 0;
+  background: #F3F3F3;
+}
+
+footer .email h3{
+  text-transform: none;
+  letter-spacing: initial;
+}
+
