@@ -176,45 +176,8 @@ p {
   padding: 0 2em;
 }
 
-.profile .icons h4 {
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto 2em auto;
-}
-
-.profile .icons h4::before {
-  content: '';
-  display: block;
-  margin: 0 auto 1.25em auto;
-  width: 100px;
-  height: 32px;
-  background-color: #333333;
-}
-
-.profile .icons h4:nth-child(1)::before {
-  background: #F9F9F9 url("../img/design.svg") center no-repeat;
-  background-size: 32px 32px;
-}
-
-.profile .icons h4:nth-child(2)::before {
-  background: #F9F9F9 url("../img/code.svg") center no-repeat;
-  background-size: 42.064px 32px;
-}
-
-.profile .icons h4:nth-child(3)::before {
-  background: #F9F9F9 url("../img/gears.svg") center no-repeat;
-  background-size: 32.147px 32px;
-}
-
-.profile .icons h4:nth-child(4)::before {
-  background: #F9F9F9 url("../img/leaf.svg") center no-repeat;
-  background-size: 32px 32px;
-}
-
-@media only screen and (min-width : 760px) {
-  .profile .icons h4 {
-    width: 24.5%;
-  }
+.profile .icons {
+  display: none;
 }
 
 .profile .about {
@@ -224,7 +187,7 @@ p {
 }
 
 .profile .about p:first-child {
-  font-size: 1.5em;
+  font-size: 1.375em;
   line-height: 1.5;
   color: #000000;
 }
@@ -232,6 +195,54 @@ p {
 .profile .about a {
   text-decoration: none;
   color: #000000;
+}
+
+@media only screen and (min-width : 760px) {
+  
+  .profile .icons {
+    display: block;
+  }
+
+  .profile .icons h4 {
+    display: inline-block;
+    margin: 0 auto 2em auto;
+    width: 24.5%;
+  }
+
+  .profile .icons h4::before {
+    content: '';
+    display: block;
+    margin: 0 auto 1.25em auto;
+    width: 100px;
+    height: 32px;
+    background-color: #333333;
+  }
+
+  .profile .icons h4:nth-child(1)::before {
+    background: #F9F9F9 url("../img/design.svg") center no-repeat;
+    background-size: 32px 32px;
+  }
+
+  .profile .icons h4:nth-child(2)::before {
+    background: #F9F9F9 url("../img/code.svg") center no-repeat;
+    background-size: 42.064px 32px;
+  }
+
+  .profile .icons h4:nth-child(3)::before {
+    background: #F9F9F9 url("../img/gears.svg") center no-repeat;
+    background-size: 32.147px 32px;
+  }
+
+  .profile .icons h4:nth-child(4)::before {
+    background: #F9F9F9 url("../img/leaf.svg") center no-repeat;
+    background-size: 32px 32px;
+  }
+
+  .profile .about p:first-child {
+    font-size: 1.5em;
+  }
+
+
 }
 
 
