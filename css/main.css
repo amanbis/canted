@@ -1,22 +1,3 @@
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  padding: 0 auto -4em;
-}
-
-/* footer, */ .push {
-  height: 4em;
-}
-
 /** Global Styling **/
 
 h1 {
@@ -390,14 +371,6 @@ p {
 .contact {
   background-color: #F3F3F3;
 }
-
-.contact .skew:before {
-  position: absolute;
-  left: -100px;
-  bottom: 0;
-  height: 500px;
-}
-
 
 .contact .email {
 }
