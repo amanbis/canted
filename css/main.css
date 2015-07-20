@@ -1,4 +1,30 @@
+
+
+/** Sticky Footer Styling **/
+
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+/*.footer,*/ .push {
+height: 4em;
+}
+
+
 /** Global Styling **/
+
 
 h1 {
   font-size: 3em;
@@ -46,6 +72,10 @@ p {
   color: #212121;
 }
 
+.spacer {
+  margin-bottom: 10em;
+}
+
 .hr {
   margin: 0 auto;
   width: 5em;
@@ -58,10 +88,6 @@ p {
   margin-bottom: 4em;
 }
 
-.spacer {
-  margin: 5em 0;
-}
-
 @media only screen and (min-width : 760px) {
   .hr {
     width: 7.5em;
@@ -71,7 +97,6 @@ p {
 
 /** Header Section **/
 
-
 .logo {
   z-index: 1;
   position: absolute;
@@ -79,50 +104,24 @@ p {
   top: 2em;
   width: 100px;
   height: 20px;
-  background: #F3F3F3 url("../img/filament.svg") center no-repeat;
+  background: url("../img/filament.svg") center no-repeat;
   background-size: 100px;
 }
 
-/*.skew-cover {
-  width: 100%;
-  height: 5em;
-  background-color: #F3F3F3;
-}*/
-
-.skew:before {
-  content: '';
-  overflow: visible;
-  width: 100%;
-  background: #F3F3F3;
-  z-index: -1;
-  -webkit-transform: skewY(-5deg);
-  -moz-transform: skewY(-5deg);
-  -ms-transform: skewY(-5deg);
-  -o-transform: skewY(-5deg);
-  transform: skewY(-5deg);
-}
-
-.header {
-  z-index: 1;
-  position: relative;
-}
-
-/*.header .skew-cover {
-  position: absolute;
-  left: 0;
-  top: 0;
-}*/
-
-.header .skew:before {
-  position: absolute;
-  left: 0;
-  top: -6em;
-  height: 101.25%;
-}
+/** Slant on top will show on resolutions higher than 1080p **/
 
 .header .block {
   text-align: center;
   height: 100vh;
+  background-color: #F3F3F3;
+  position: relative;
+  top: -3em;
+  left: 0;
+  -webkit-transform: skewY(-2.5deg);
+  -moz-transform: skewY(-2.5deg);
+  -ms-transform: skewY(-2.5deg);
+  -o-transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
 }
  
 .header .block:before {
@@ -141,6 +140,11 @@ p {
   display: inline-block;
   vertical-align: middle;
   width: 80%;
+  -webkit-transform: skewY(2.5deg);
+  -moz-transform: skewY(2.5deg);
+  -ms-transform: skewY(2.5deg);
+  -o-transform: skewY(2.5deg);
+  transform: skewY(2.5deg);
 
   /* For visualization
   padding: 10px 15px;
@@ -159,7 +163,7 @@ p {
 /**  About Section **/
 
 .profile {
-  padding: 5em 0 0 0;
+  margin-top: 7em;
 }
 
 .profile .icons {
@@ -212,29 +216,28 @@ p {
   }
 
   .profile .icons h4:nth-child(1)::before {
-    background: #F9F9F9 url("../img/design.svg") center no-repeat;
+    background: url("../img/design.svg") center no-repeat;
     background-size: 32px 32px;
   }
 
   .profile .icons h4:nth-child(2)::before {
-    background: #F9F9F9 url("../img/code.svg") center no-repeat;
+    background: url("../img/code.svg") center no-repeat;
     background-size: 42.064px 32px;
   }
 
   .profile .icons h4:nth-child(3)::before {
-    background: #F9F9F9 url("../img/gears.svg") center no-repeat;
+    background: url("../img/gears.svg") center no-repeat;
     background-size: 32.147px 32px;
   }
 
   .profile .icons h4:nth-child(4)::before {
-    background: #F9F9F9 url("../img/leaf.svg") center no-repeat;
+    background: url("../img/leaf.svg") center no-repeat;
     background-size: 32px 32px;
   }
 
   .profile .about p:first-child {
     font-size: 1.5em;
   }
-
 
 }
 
@@ -363,16 +366,30 @@ p {
 }
 
 
-/** Footer **/
+/** Footer Styling **/
 
-
-/** Need to make footer sticky **/
 
 .contact {
-  background-color: #F3F3F3;
+  background: #F3F3F3;
+  position: relative;
+  height: 11em;
+  margin-top: 10em;
 }
 
-.contact .email {
+.contact:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 100%;
+  height: 10em;
+  background: #F3F3F3;
+  z-index: -1;
+  -webkit-transform: skewY(-2.5deg);
+  -moz-transform: skewY(-2.5deg);
+  -ms-transform: skewY(-2.5deg);
+  -o-transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
 }
 
 .contact .email h3 {
