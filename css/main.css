@@ -377,14 +377,28 @@ p {
   background: rgba(0,0,0,0.8);
   z-index: 99999;
   opacity:0;
-  -webkit-transition: opacity 0.3s ease-in;
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+
+  /*-webkit-transition: opacity 0.3s ease-in;
   -moz-transition: opacity 0.3s ease-in;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;*/
+
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -o-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   pointer-events: none;
 }
 
 .modalDialog:target {
   opacity:1;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
   pointer-events: auto;
 }
 
