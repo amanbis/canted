@@ -72,6 +72,18 @@ p {
   color: #212121;
 }
 
+p.focus-line {
+  font-size: 1.375em;
+  line-height: 1.5;
+  color: #000000;
+}
+
+@media only screen and (min-width: 760px) {
+  p.focus-line {
+    font-size: 1.5em;
+  }
+}
+
 .spacer {
   margin-bottom: 10em;
 }
@@ -180,13 +192,7 @@ p {
 .profile .about {
   max-width: 860px;
   margin: 2em auto 0 auto;
-  padding: 0 3em;
-}
-
-.profile .about p:first-child {
-  font-size: 1.375em;
-  line-height: 1.5;
-  color: #000000;
+  padding: 0 2em;
 }
 
 .profile .about a {
@@ -233,10 +239,6 @@ p {
   .profile .icons h4:nth-child(4)::before {
     background: url("../img/leaf.svg") center no-repeat;
     background-size: 32px 32px;
-  }
-
-  .profile .about p:first-child {
-    font-size: 1.5em;
   }
 
 }
@@ -352,6 +354,7 @@ p {
   opacity: 0.75;
   -webkit-transform: translateY(20%);
   -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
   -o-transform: translateY(20%);
   transform: translateY(20%);
 }
@@ -361,6 +364,7 @@ p {
   opacity: 0;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
   transform: translateY(-100%);
 }
@@ -369,25 +373,24 @@ p {
 
 .modalDialog {
   position: fixed;
+  overflow: scroll;
   font-family: Arial, Helvetica, sans-serif;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.8);
+  background: #F9F9F9;
   z-index: 99999;
   opacity:0;
   -webkit-transform: translateY(300%);
   -moz-transform: translateY(300%);
   -ms-transform: translateY(300%);
+  -0-transform: translateY(300%);
   transform: translateY(300%);
-
-  /*-webkit-transition: opacity 0.3s ease-in;
-  -moz-transition: opacity 0.3s ease-in;
-  transition: opacity 0.3s ease-in;*/
 
   -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -ms-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   -o-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   pointer-events: none;
@@ -403,16 +406,34 @@ p {
 }
 
 .modalDialog > div {
-  width: 400px;
+  max-width: 80%;
   position: relative;
-  margin: 10% auto;
-  padding: 5px 20px 13px 20px;
-  border-radius: 10px;
-  background: #fff;
-  background: -moz-linear-gradient(#fff, #999);
-  background: -webkit-linear-gradient(#fff, #999);
-  background: -o-linear-gradient(#fff, #999);
+  margin: 0 auto;
+  padding: 7em 0;
 }
+
+.modalDialog > div h3 {
+  color: #f05a3f;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+.modalDialog > div .content {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 760px) {
+
+  .modalDialog > div h3 {
+    font-size: 1.5em;
+  }
+
+  .modalDialog > div .content {
+    width: 40%;
+  }
+
+}
+
 
 .close {
   background: #606061;
@@ -421,7 +442,8 @@ p {
   position: absolute;
   right: -12px;
   text-align: center;
-  top: -10px;
+  top: 2.75em;
+  right: 1em;
   width: 24px;
   text-decoration: none;
   font-weight: bold;
