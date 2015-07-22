@@ -382,17 +382,17 @@ p.focus-line {
   background: #F9F9F9;
   z-index: 99999;
   opacity:0;
-  -webkit-transform: translateY(300%);
-  -moz-transform: translateY(300%);
-  -ms-transform: translateY(300%);
-  -0-transform: translateY(300%);
-  transform: translateY(300%);
+  -webkit-transform: translateY(200%);
+  -moz-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  -0-transform: translateY(200%);
+  transform: translateY(200%);
 
-  -webkit-transition: -webkit-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  -moz-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  -ms-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  -o-transition: -moz-transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -ms-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -o-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
   pointer-events: none;
 }
 
