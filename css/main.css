@@ -415,11 +415,40 @@ p.focus-line {
 .modalDialog > div h3 {
   color: #f05a3f;
   margin-top: 0.5em;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
-.modalDialog > div .content {
+.modalDialog .content,
+.modalDialog .image {
   display: inline-block;
+}
+
+.modalDialog .image {
+  padding-top: 5em;
+}
+
+.modalDialog .content .hr {
+  background-color: #FF8835;
+  width: 100%;
+}
+
+.modalDialog .content .content-type {
+  margin: 0.75em 0;
+}
+
+.modalDialog .content .content-type h4,
+.modalDialog .content .content-type p {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.modalDialog .content .content-type h4 {
+  text-align: left;
+}
+
+.modalDialog .content .content-type p {
+  text-align: right;
+  font-size: 1em;
 }
 
 @media only screen and (min-width: 760px) {
@@ -428,8 +457,14 @@ p.focus-line {
     font-size: 1.5em;
   }
 
-  .modalDialog > div .content {
+  .modalDialog .content {
     width: 40%;
+  }
+
+  .modalDialog .image {
+    float: right;
+    width: 56%;
+    padding-top: 2em;
   }
 
 }
