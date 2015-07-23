@@ -471,53 +471,43 @@ p.focus-line {
   transition: background-color 0.3s;
 }
 
-.close-sign {
+.close-sign, .close-sign::before {
   position: absolute;
-  top: 45%;
-  left: 32%;
   background-color: #333333;
   width: 1.5em;
   height: 0.25em;
+
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.close-sign {
+  top: 45%;
+  left: 32%;
   -o-transform: rotate(45deg); /* Opera */
   -moz-transform: rotate(45deg); /* Firefox */
   -ms-transform: rotate(45deg); /* IE 9 */
   -webkit-transform: rotate(45deg); /* Safari */
   transform: rotate(45deg);
-  
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -ms-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 
 .close-sign::before {
   content: '';
-  position: absolute;
   top: 0;
   left: 0;
-  background-color: #333333;
-  width: 1.5em;
-  height: 0.25em;
   -o-transform: rotate(90deg); /* Opera */
   -moz-transform: rotate(90deg); /* Firefox */
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Safari */
   transform: rotate(90deg);
-  
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  -ms-transition: background-color 0.3s;
-  transition: background-color 0.3s;
 }
 
+.close:focus,
 .close:hover > .close-sign,
 .close:hover > .close-sign::before {
-  background-color: #f05a3f;
-}
-
-.close:focus {
   background-color: #f05a3f;
 }
 
