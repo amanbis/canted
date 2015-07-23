@@ -112,17 +112,6 @@ nav {
   z-index: 2;
 }
 
-nav .logo {
-  z-index: 1;
-  position: absolute;
-  left: 2em;
-  top: 2em;
-  width: 100px;
-  height: 20px;
-  background: url("../img/filament.svg") center no-repeat;
-  background-size: 100px;
-}
-
 nav .menu {
   z-index: 1;
   position: absolute;
@@ -178,6 +167,16 @@ nav .menu {
 
 /* Need to make it so it only occurs on laptops/desktops */
 @media only screen and (min-width: 760px) {
+  nav .logo {
+    z-index: 1;
+    position: absolute;
+    left: 2em;
+    top: 2em;
+    width: 100px;
+    height: 20px;
+    background: url("../img/filament.svg") center no-repeat;
+    background-size: 100px;
+  }
   .menu:hover > .hamburger::before {
     transform: translateY(-11px);
   }
