@@ -451,28 +451,10 @@ p.focus-line {
   font-size: 1em;
 }
 
-@media only screen and (min-width: 760px) {
-
-  .modalDialog > div h3 {
-    font-size: 1.5em;
-  }
-
-  .modalDialog .content {
-    width: 40%;
-  }
-
-  .modalDialog .image {
-    float: right;
-    width: 56%;
-    padding-top: 2em;
-  }
-
-}
-
 .close {
   position: absolute;
-  top: 3em;
-  right: 3em;
+  top: 1em;
+  right: -1em;
   height: 4em;
   width: 4em;
   background-color: none;
@@ -541,6 +523,29 @@ p.focus-line {
 
 .close:focus > .close-sign, .close:focus > .close-sign::before {
   background-color: #F9F9F9;
+}
+
+@media only screen and (min-width: 760px) {
+
+  .modalDialog > div h3 {
+    font-size: 1.5em;
+  }
+
+  .modalDialog .content {
+    width: 40%;
+  }
+
+  .modalDialog .image {
+    float: right;
+    width: 56%;
+    padding-top: 2em;
+  }
+
+  .close {
+    top: 3em;
+    right: 0;
+  }
+
 }
 
 
