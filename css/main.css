@@ -106,10 +106,13 @@ p.focus-line {
   }
 }
 
+/** Navigation **/
 
-/** Header Section **/
+nav {
+  z-index: 2;
+}
 
-.logo {
+nav .logo {
   z-index: 1;
   position: absolute;
   left: 2em;
@@ -120,8 +123,73 @@ p.focus-line {
   background-size: 100px;
 }
 
-/** Slant on top will show on resolutions higher than 1080p **/
+nav .menu {
+  z-index: 1;
+  position: absolute;
+  top: 1em;
+  right: 2em;
+  height: 4em;
+  width: 4em;
+  background-color: none;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
 
+.hamburger, .hamburger::before, .hamburger::after {
+  position: absolute;
+  background-color: #333333;
+  width: 2em;
+  height: 0.2em;
+  
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.hamburger {
+  top: 45%;
+  left: 25%;
+}
+
+.hamburger::before, .hamburger::after {
+  content: '';
+  left: 0;
+  transition: transform 0.3s;
+}
+
+.hamburger::before {
+  transform: translateY(-9px);
+}
+
+.hamburger::after {
+  transform: translateY(9px);
+}
+
+@media only screen and (min-width: 760px) {
+  .menu:hover > .hamburger::before {
+    transform: translateY(-11px);
+  }
+
+  .menu:hover > .hamburger::after {
+    transform: translateY(11px);
+  }
+}
+
+
+/** Header Section **/
+
+/* Slant on top will show on resolutions higher than 1080p */
 .header .block {
   text-align: center;
   height: 100vh;
