@@ -6,10 +6,21 @@
         <meta name="description" content="Portfolio website with canted stylings." />
 
         <title>Canted - Stylish Slanted Showcase</title>
+
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".menu").on('click', function() {
+                    $(this).toggleClass('is-active');
+                    $(this).toggleClass('is-inactive');
+                });
+            });
+        </script>
     </head>
 
     <body>
@@ -18,7 +29,7 @@
 
             <nav>
                 <div class="logo"></div>
-                <a href="#menu" title="Menu" class="menu" aria-label="menu"><div class="hamburger"></div></a>
+                <a href="#menu" title="Menu" class="menu is-inactive" aria-label="menu"><div class="hamburger"></div></a>
             </nav>
 
             <!-- Header Section -->
