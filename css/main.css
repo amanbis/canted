@@ -233,8 +233,22 @@ nav .menu {
     right: 2em;
   }
 
+  nav .links-container {
+    height: 6em;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
   nav .logo {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     left: 2em;
     top: 2em;
@@ -258,6 +272,14 @@ nav .menu {
     -o-transform: translateY(11px);
     -ms-transform: translateY(11px);
     transform: translateY(11px);
+  }
+
+  .is-active ~ .links-container {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
