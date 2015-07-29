@@ -85,6 +85,7 @@ p.focus-line {
 }
 
 .spacer {
+  padding-top: 2em;
   margin-bottom: 10em;
 }
 
@@ -157,7 +158,7 @@ nav .links-container ul li {
   padding: 20px;
 }
 
-nav .links-container ul a {
+nav .links-container a {
   font-family: "Josefin Sans", "Futura", sans-serif;
   font-weight: 700;
   font-size: 1em;
@@ -166,6 +167,16 @@ nav .links-container ul a {
   text-transform: uppercase;
   text-decoration: none;
   color: #212121;
+
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -ms-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+nav .links-container a:focus {
+  color: #f05a3f;
 }
 
 nav .menu {
@@ -302,7 +313,8 @@ nav .menu {
     display: inline-block;
   }
 
-  nav .links-container ul a {
+  nav .links-container a:hover {
+    color: #f05a3f;
   }
 
   .is-inactive:hover > .hamburger::before {
