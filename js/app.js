@@ -22,9 +22,27 @@ $(document).ready(function(){
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
      */
+
     $(".links-container a").click(function(evn){
         evn.preventDefault();
         $('html,body').scrollTo(this.hash, this.hash);
+    });
+
+    /**
+     * This part hides the menu icon upon scrolling down and reveals it scrolling up.
+     * It only targets the icon when it is inactive, i.e. not showing the nav bar.
+     */
+
+    var senseSpeed = 5;
+    var previousScroll = 0;
+    $(window).scroll(function(event){
+       var scroller = $(this).scrollTop();
+       if (scroller-senseSpeed > previousScroll){
+          $(".menu.is-inactive").filter(':not(:animated)').slideUp(300);
+       } else if (scroller+senseSpeed < previousScroll) {
+          $(".menu.is-inactive").filter(':not(:animated)').slideDown(300);
+       }
+       previousScroll = scroller;
     });
 
 
@@ -66,4 +84,5 @@ $(document).ready(function(){
             }
         }
     });
+
 });
