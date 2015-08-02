@@ -1,71 +1,3 @@
-section {
-  position: relative;
-  z-index: 1; /* needed for setting pseudo-element z-index */
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-section a {
-  position: relative;
-  display: inline-block;
-  outline: none;
-  color: #404d5b;
-  vertical-align: bottom;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-section a::before,
-section a::after {
-  pointer-events: none;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-}
-
-
-/* Slide up */
-
-.profile a {
-  overflow: hidden;
-  font-weight: 500;
-}
-
-.profile a::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(240,90,63,0.5);
-  content: '';
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  -webkit-transform: translateY(95%);
-  transform: translateY(95%);
-}
-
-.profile a:hover::before,
-.profile a:focus::before {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /** Sticky Footer Styling **/
 
@@ -92,6 +24,7 @@ height: 4em;
 
 /** Global Styling **/
 
+/* Text Styles */
 
 h1 {
   font-size: 3em;
@@ -150,6 +83,75 @@ p.focus-line {
     font-size: 1.5em;
   }
 }
+
+
+/* Link Styles */
+
+/* !!!!!!! Link size not displaying properly in some viewports !!!!!!! */
+
+.linkslideup {
+  position: relative;
+  z-index: 1; /* needed for setting pseudo-element z-index */
+}
+
+.linkslideup a {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  color: #212121;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0;
+}
+
+.linkslideup a:visited {
+  color: #616161;
+}
+
+.linkslideup a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240,90,63,0.25);
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -ms-transition: -ms-transform 0.3s;
+  transition: transform 0.3s;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.linkslideup a:hover::before,
+.linkslideup a:focus::before {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.linkslideup a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.75px;
+  background-color: #f05a3f;
+  z-index: -1;
+}
+
+
+/* Spacing and Dividers */
 
 .spacer {
   padding-top: 2em;
@@ -260,6 +262,7 @@ nav .menu {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  outline: 0;
   
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
