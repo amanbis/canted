@@ -42,7 +42,7 @@ h4 {
   font-size: 0.875em;
 }
 
-@media only screen and (min-width : 760px) {
+@media only screen and (min-device-width : 760px) {
   h1 {
     font-size: 4em;
   }
@@ -78,7 +78,7 @@ p.focus-line {
   color: #000000;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-device-width: 760px) {
   p.focus-line {
     font-size: 1.5em;
   }
@@ -89,10 +89,12 @@ p.focus-line {
 
 /* !!!!!!! Link size not displaying properly in some viewports !!!!!!! */
 
+/*
+
 .linkslideup {
   position: relative;
   z-index: 1; /* needed for setting pseudo-element z-index */
-}
+/*} 
 
 .linkslideup a {
   position: relative;
@@ -148,7 +150,7 @@ p.focus-line {
   height: 2.75px;
   background-color: #f05a3f;
   z-index: -1;
-}
+}*/
 
 
 /* Spacing and Dividers */
@@ -170,7 +172,7 @@ p.focus-line {
   margin-bottom: 4em;
 }
 
-@media only screen and (min-width : 760px) {
+@media only screen and (min-device-width : 760px) {
   .hr {
     width: 7.5em;
   }
@@ -344,7 +346,7 @@ nav .menu {
 }
 
 /* Need to make it so it only occurs on laptops/desktops */
-@media only screen and (min-width: 760px) {
+@media only screen and (min-device-width: 760px) {
   nav .menu {
     top: 1em;
     right: 1em;
@@ -474,7 +476,7 @@ nav .menu {
   background-color: #f05a3f;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-device-width: 760px) {
   header .logo {
     z-index: 1;
     position: absolute;
@@ -511,12 +513,7 @@ nav .menu {
   padding: 0 2em;
 }
 
-.profile .about a {
-  text-decoration: none;
-  color: #000000;
-}
-
-@media only screen and (min-width : 760px) {
+@media only screen and (min-device-width : 760px) {
   
   .profile .icons {
     display: block;
@@ -603,7 +600,7 @@ nav .menu {
   transition: transform 0.3s, opacity 0.3s;
 }
 
-@media only screen and (min-width : 760px) {
+@media only screen and (min-device-width : 760px) {
   .work .portfolio {
     max-width: 1024px;
     margin: 0 auto;
@@ -831,7 +828,7 @@ nav .menu {
   background-color: #F9F9F9;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-device-width: 760px) {
 
   .modalDialog > div h3 {
     font-size: 1.5em;
@@ -886,7 +883,7 @@ nav .menu {
   letter-spacing: initial;
 }
 
-@media only screen and (min-width : 760px) {
+@media only screen and (min-device-width : 760px) {
   .contact .email h3 {
     font-size: 2em;
   }
