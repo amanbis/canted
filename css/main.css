@@ -87,70 +87,74 @@ p.focus-line {
 
 /* Link Styles */
 
-/* !!!!!!! Link size not displaying properly in some viewports !!!!!!! */
-
-/*
-
-.linkslideup {
-  position: relative;
-  z-index: 1; /* needed for setting pseudo-element z-index */
-/*} 
-
 .linkslideup a {
-  position: relative;
-  display: inline-block;
-  vertical-align: bottom;
-  color: #212121;
   text-decoration: none;
-  overflow: hidden;
-  white-space: nowrap;
-  outline: 0;
+  background-color: rgba(240,90,63,0.25);
+  color: #212121;
 }
 
 .linkslideup a:visited {
   color: #616161;
 }
 
-.linkslideup a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(240,90,63,0.25);
-  z-index: -1;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  -o-transition: -o-transform 0.3s;
-  -ms-transition: -ms-transform 0.3s;
-  transition: transform 0.3s;
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -o-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-}
 
-.linkslideup a:hover::before,
-.linkslideup a:focus::before {
-  -webkit-transform: translateY(0);
-  -moz-transform: translateY(0);
-  -o-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-}
+@media only screen and (min-device-width: 760px) {
+   .linkslideup {
+    position: relative;
+    z-index: 1; /* needed for setting pseudo-element z-index */
+  } 
 
-.linkslideup a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2.75px;
-  background-color: #f05a3f;
-  z-index: -1;
-}*/
+  .linkslideup a {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0;
+  }
+
+  .linkslideup a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240,90,63,0.25);
+    z-index: -1;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    -o-transition: -o-transform 0.3s;
+    -ms-transition: -ms-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+
+  .linkslideup a:hover::before,
+  .linkslideup a:focus::before {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .linkslideup a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2.75px;
+    background-color: #f05a3f;
+    z-index: -1;
+  } 
+}
 
 
 /* Spacing and Dividers */
@@ -497,14 +501,11 @@ nav .menu {
 }
 
 .profile .icons {
+  display: none;
   max-width: 860px;
   margin: 0 auto;
   margin-top: 4em;
   padding: 0 2em;
-}
-
-.profile .icons {
-  display: none;
 }
 
 .profile .about {
@@ -694,7 +695,7 @@ nav .menu {
   left: 0;
   background: #F9F9F9;
   z-index: 99999;
-  opacity:0;
+  /*opacity:0;*/
   -webkit-transform: translateY(200%);
   -moz-transform: translateY(200%);
   -ms-transform: translateY(200%);
@@ -710,11 +711,11 @@ nav .menu {
 }
 
 .modalDialog:target {
-  opacity:1;
-  -webkit-transform: translateY(0%);
-  -moz-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
+  /*opacity:1;*/
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
   pointer-events: auto;
 }
 
