@@ -58,7 +58,6 @@ h4 {
 
 h1, h2, h3, h4 {
   font-family: "Josefin Sans", "Futura", sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.5;
@@ -883,6 +882,7 @@ nav .menu {
 .contact .email h3 {
   text-transform: none;
   letter-spacing: initial;
+  font-size: 1.25em;
 }
 
 @media only screen and (min-width : 760px) {
