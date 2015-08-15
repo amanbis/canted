@@ -27,7 +27,7 @@ height: 4em;
 /* Text Styles */
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.25em;
 }
 
 h2 {
@@ -88,12 +88,20 @@ p.focus-line {
 
 .linkslideup a {
   text-decoration: none;
-  background-color: rgba(240,90,63,0.25);
   color: #212121;
 }
 
 .linkslideup a:visited {
   color: #616161;
+}
+
+@media only screen and (max-width: 760px) {
+  .linkslideup a {
+    background-color: rgba(240,90,63,0.25);
+  }
+  .linkslideup a:active {
+    background-color: rgba(240,90,63,0.5);
+  }
 }
 
 @media only screen and (min-width: 760px) {
