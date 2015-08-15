@@ -236,7 +236,7 @@ nav .links-container .logo {
 }
 
 nav .links-container ul li {
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 nav .links-container a {
@@ -387,7 +387,7 @@ nav .menu {
   }
 
   nav .links-container ul {
-    top: 1em;
+    top: 1.5em;
     -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
     -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
     -ms-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000);
