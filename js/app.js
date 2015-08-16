@@ -28,7 +28,7 @@ $(document).ready(function(){
             type: 'POST',
             dataType: 'html',
             success: function(result) {
-                $('.modalDialog > div').html(result);
+                $('.modalContent').html(result);
             }
         });
      });
