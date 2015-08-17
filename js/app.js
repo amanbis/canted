@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     $('button').on('click', function() {
         $.ajax({
-            url: 'text.txt', 
+            url: 'test.txt', 
             type: 'POST',
             dataType: 'html',
             success: function(result) {
