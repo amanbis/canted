@@ -23,7 +23,7 @@ $(document).ready(function(){
      */
 
      $('.portfolio a').on('click', function() {
-        $.ajax{
+        $.ajax({
             url:'portfolio/modal.html',
             type: 'POST',
             dataType: 'html',
@@ -34,7 +34,7 @@ $(document).ready(function(){
      });
 
     $('button').on('click', function() {
-        $.ajax{
+        $.ajax({
             url:'portfolio/modal.html',
             type: 'POST',
             dataType: 'html',
