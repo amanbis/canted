@@ -33,6 +33,17 @@ $(document).ready(function(){
         });
      });
 
+    $('button').on('click', function() {
+        $.ajax{
+            url:'portfolio/modal.html',
+            type: 'POST',
+            dataType: 'html',
+            success: function(result) {
+                $('.stuff').html(result);
+            }
+        });
+     });
+
     /**
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
