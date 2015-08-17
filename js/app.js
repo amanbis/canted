@@ -39,7 +39,7 @@ $(document).ready(function(){
             type: 'POST',
             dataType: 'html',
             success: function(result) {
-                $('.stuff').html(result);
+                $('.title').html(result);
             }
         });
     });
