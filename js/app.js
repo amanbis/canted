@@ -24,7 +24,7 @@ $(document).ready(function(){
 
      $('.portfolio a').on('click', function() {
         $.ajax({
-            url: '/portfolio/modal.html',
+            url: 'http://amanbis.github.io/canted/portfolio/modal.html',
             type: 'POST',
             dataType: 'html',
             success: function(result) {
@@ -35,7 +35,7 @@ $(document).ready(function(){
 
     $('button').on('click', function() {
         $.ajax({
-            url: 'test.txt', 
+            url: 'http://amanbis.github.io/canted/test.txt', 
             type: 'POST',
             dataType: 'html',
             success: function(result) {
