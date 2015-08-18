@@ -25,7 +25,7 @@ $(document).ready(function(){
      $('.portfolio a').on('click', function() {
         $.ajax({
             url: 'portfolio/modal.html', 
-            type: 'POST',
+            type: 'GET',
             dataType: 'html',
             success: function(result) {
                 $('.modalContent').html(result);
