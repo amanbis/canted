@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-	/**
+    /**
      * This part toggles if the nav bar is active or not, 
      * as well as the state of the menu icon.
      */
 
     $(".menu").on('click', function(evn) {
-    	evn.preventDefault();
+        evn.preventDefault();
         $(this).toggleClass('is-active');
         $(this).toggleClass('is-inactive');
     });
@@ -24,11 +24,7 @@ $(document).ready(function(){
 
      $('.portfolio a').on('click', function() {
         $.ajax({
-<<<<<<< HEAD
             url: 'portfolio/modal.html', 
-=======
-            url: 'http://amanbis.github.io/canted/portfolio/modal.html',
->>>>>>> origin/master
             type: 'POST',
             dataType: 'html',
             success: function(result) {
@@ -37,20 +33,6 @@ $(document).ready(function(){
         });
      });
 
-<<<<<<< HEAD
-=======
-    $('button').on('click', function() {
-        $.ajax({
-            url: 'http://amanbis.github.io/canted/test.txt', 
-            type: 'POST',
-            dataType: 'html',
-            success: function(result) {
-                $('.title').html(result);
-            }
-        });
-    });
-
->>>>>>> origin/master
     /**
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
