@@ -22,9 +22,12 @@ $(document).ready(function(){
      * as well as the state of the menu icon.
      */
 
-     $('.portfolio a').on('click', function() {
+     $('.portfolio').on('click', 'a', function() {
+        console.log(this);
+        var id = "portfolio/" + $(this).data('id') + ".html"
+        console.log(id);
         $.ajax({
-            url: 'portfolio/modal.html', 
+            url: id, 
             type: 'GET',
             dataType: 'html',
             success: function(result) {
