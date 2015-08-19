@@ -31,7 +31,7 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function(result) {
-                $('.modalContent').html(result);
+                $('.modalContent').html(result).fadeIn();
             }
         });
      });
