@@ -741,6 +741,8 @@ nav .menu {
 }
 
 .modalDialog .modalContent {
+  position: relative;
+  margin: 0 auto;
   max-width: 80%;
 }
 
