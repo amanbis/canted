@@ -729,7 +729,6 @@ nav .menu {
 }
 
 .modalDialog > div {
-  max-width: 80%;
   position: relative;
   margin: 0 auto;
   padding: 7em 0;
@@ -739,6 +738,10 @@ nav .menu {
   color: #f05a3f;
   margin-top: 0.5em;
   margin-bottom: 3em;
+}
+
+.modalDialog .modalContent {
+  max-width: 80%;
 }
 
 .modalDialog .content,
@@ -777,7 +780,7 @@ nav .menu {
 .close {
   position: absolute;
   top: 1em;
-  right: -1em;
+  right: 0.25em;
   height: 4em;
   width: 4em;
   background-color: none;
@@ -797,8 +800,8 @@ nav .menu {
 .close-icon, .close-icon::before {
   position: absolute;
   background-color: #333333;
-  width: 1.5em;
-  height: 0.25em;
+  width: 2em;
+  height: 0.2em;
 
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
@@ -852,10 +855,6 @@ nav .menu {
     float: right;
     width: 56%;
     padding-top: 2em;
-  }
-
-  .close {
-    right: 0;
   }
 
 }
