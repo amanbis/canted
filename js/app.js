@@ -32,7 +32,14 @@ $(document).ready(function(){
             dataType: 'html',
             success: function(result) {
                 $('.modalContent').html(result).fadeIn();
-            }
+            },
+            error: function(request, errorType, errorMessage) {
+                alert('Error: ' + errorType + ' with message: ' + errorMessage);
+            },
+            timeout: 3000,
+            beforeSend: function() {
+            },
+            complete: function() {}
         });
      });
 
