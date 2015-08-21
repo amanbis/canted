@@ -885,7 +885,11 @@ nav .menu {
 
 @media only screen and (min-width: 760px) {
 
-  .modalDialog > div h3 {
+  .modalDialog .modalContent {
+    padding: 5em 0;
+  }
+
+  .modalDialog .modalContent h3 {
     font-size: 1.5em;
   }
 
