@@ -31,7 +31,7 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function(result) {
-                $('.modalContent').html(result).fadeIn(4000);
+                $('.modalContent').detach().html(result).fadeIn(4000);
             },
             error: function(request, errorType, errorMessage) {
                 alert('Error: ' + errorType + ' with message: ' + errorMessage);
@@ -39,7 +39,6 @@ $(document).ready(function(){
             timeout: 3000,
             beforeSend: function() {
                 $('.load-container').show();
-                $('.modalContent').detach;
             },
             complete: function() {
                 $('.load-container').hide();
