@@ -842,6 +842,8 @@ nav .menu {
 
 .load-container {
   display: table;
+  width: 100%;
+  display: 100%;
 }
 
 .loader {

@@ -38,8 +38,11 @@ $(document).ready(function(){
             },
             timeout: 3000,
             beforeSend: function() {
+                $('.load-container').show();
             },
-            complete: function() {}
+            complete: function() {
+                $('.load-container').hide();
+            }
         });
      });
 
