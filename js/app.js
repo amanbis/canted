@@ -31,7 +31,7 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function(result) {
-                $('.modalContent').detach().html(result).appendTo('.modalDialog').fadeIn(4000);
+                $('.modalContent').hide().html(result).appendTo('.modalDialog').fadeIn('slow');
             },
             error: function(request, errorType, errorMessage) {
                 alert('Error: ' + errorType + ' with message: ' + errorMessage);
