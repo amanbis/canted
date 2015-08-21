@@ -31,7 +31,7 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function(result) {
-                $('.modalContent').html(result);
+                $('.modalContent').html(result).fadeIn('slow');
             },
             error: function(request, errorType, errorMessage) {
                 alert('Error: ' + errorType + ' with message: ' + errorMessage);
@@ -43,7 +43,6 @@ $(document).ready(function(){
             },
             complete: function() {
                 $('.load-container').hide();
-                $('.modalContent').show().fadeIn('slow');
             }
         });
      });
