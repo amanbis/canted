@@ -39,7 +39,7 @@ $(document).ready(function(){
             timeout: 3000,
             beforeSend: function() {
                 $('.load-container').show();
-                $('.modalContent').hide;
+                $('.modalContent').detach;
             },
             complete: function() {
                 $('.load-container').hide();
