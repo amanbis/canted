@@ -728,22 +728,17 @@ nav .menu {
   pointer-events: auto;
 }
 
-.modalDialog > div {
-  position: relative;
-  margin: 0 auto;
-  padding: 7em 0;
-}
-
-.modalDialog > div h3 {
-  color: #f05a3f;
-  margin-top: 0.5em;
-  margin-bottom: 3em;
-}
-
 .modalDialog .modalContent {
   position: relative;
   margin: 0 auto;
+  padding: 7em 0;
   max-width: 80%;
+}
+
+.modalDialog .modalContent h3 {
+  color: #f05a3f;
+  margin-top: 0.5em;
+  margin-bottom: 3em;
 }
 
 .modalDialog .content,
