@@ -23,6 +23,7 @@ $(document).ready(function(){
      */
 
      $('.portfolio').on('click', 'a', function() {
+        $('body').addClass('modal-open');
         console.log(this);
         var id = "portfolio/" + $(this).data('id') + ".html"
         console.log(id);
@@ -44,6 +45,10 @@ $(document).ready(function(){
                 $('.load-container').hide();
             }
         });
+     });
+
+     $('.modalDialog').on('click', '.close', function() {
+        $('body').removeClass('modal-open');
      });
 
     /**

@@ -692,6 +692,11 @@ nav .menu {
   transform: translateY(-100%);
 }
 
+/* Disable scrolling when modal window is open */
+.modal-open {
+  overflow-y: hidden; 
+}
+
 /* Modal Window Styling */
 
 .modalDialog {
