@@ -788,7 +788,7 @@ nav .menu {
   right: 0.25em;
   height: 4em;
   width: 4em;
-  background-color: none;
+  background-color: transparent;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
@@ -816,8 +816,8 @@ nav .menu {
 }
 
 .close-icon {
-  top: 45%;
-  left: 32%;
+  top: 47%;
+  left: 27%;
   -o-transform: rotate(45deg); /* Opera */
   -moz-transform: rotate(45deg); /* Firefox */
   -ms-transform: rotate(45deg); /* IE 9 */
