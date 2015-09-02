@@ -1,30 +1,11 @@
 
-/** Sticky Footer Styling **/
+
+/* ==============
+   Global Styling 
+   ============== */
 
 
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -4em;
-}
-
-/*.footer,*/ .push {
-height: 4em;
-}
-
-
-/** Global Styling **/
-
-/* Text Styles */
+/* === Text Styles === */
 
 h1 {
   font-size: 2.25em;
@@ -84,7 +65,7 @@ p.focus-line {
 }
 
 
-/* Link Styles */
+/* === Link Styles === */
 
 .linkslideup a {
   text-decoration: none;
@@ -163,7 +144,7 @@ p.focus-line {
 }
 
 
-/* Spacing and Dividers */
+/* === Spacing and Dividers === */
 
 .spacer {
   padding-top: 2em;
@@ -188,7 +169,14 @@ p.focus-line {
   }
 }
 
-/** Navigation **/
+
+
+/* ==================
+   Navigation Styling 
+   ================== */
+
+
+/* === Navigation Links === */
 
 nav {
   z-index: 1;
@@ -262,6 +250,8 @@ nav .links-container a:focus {
   color: #f05a3f;
 }
 
+/* === Menu Icon === */
+
 nav .menu {
   z-index: 3;
   position: fixed;
@@ -328,6 +318,8 @@ nav .menu {
   transform: translateY(9px);
 }
 
+/** Active/Inactive Menu and Navbar States **/
+
 .is-active > .hamburger {
     background-color: transparent;
 }
@@ -356,7 +348,6 @@ nav .menu {
   transform: translateX(0%);
 }
 
-/* Need to make it so it only occurs on laptops/desktops */
 @media only screen and (min-width: 760px) {
   nav .menu {
     top: 1em;
@@ -440,7 +431,14 @@ nav .menu {
 }
 
 
-/** Header Section **/
+
+/* ===============
+   Header Stylings 
+   =============== */
+
+
+/* === Fullscreen Header with Centered Content === */
+
 
 /* Slant on top will show on resolutions higher than 1080p */
 .header .block {
@@ -506,7 +504,10 @@ nav .menu {
 }
 
 
-/**  About Section **/
+/* =============
+   About Styling 
+   ============= */
+
 
 .profile {
   margin-top: 7em;
@@ -570,7 +571,10 @@ nav .menu {
 }
 
 
-/** Portfolio Section **/
+
+/* =================
+   Portfolio Styling 
+   ================= */
 
 
 .work .portfolio {
@@ -700,7 +704,8 @@ nav .menu {
   overflow-y: hidden; 
 }
 
-/* Modal Window Styling */
+
+/* === Modal Window Styling === */
 
 .modalDialog {
   position: fixed;
@@ -846,7 +851,7 @@ nav .menu {
   background-color: #F9F9F9;
 }
 
-/* Loading Animation in Modal Window */
+/* === Loading Animation in Modal Window === */
 
 .load-container {
   display: table;
@@ -889,8 +894,6 @@ nav .menu {
   }
 }
 
-
-
 @media only screen and (min-width: 760px) {
 
   .modalDialog .modalContent {
@@ -914,7 +917,9 @@ nav .menu {
 }
 
 
-/** Footer Styling **/
+/* ==============
+   Footer Styling 
+   ============== */
 
 
 .contact {
