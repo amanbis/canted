@@ -323,7 +323,11 @@ nav .menu {
   transform-origin: left center;
 }
 
-.hamburger.hidden {
+.menu.hidden {
+  pointer-events: none;
+}
+
+.hidden .hamburger {
   -webkit-transform-origin: right center;
   -moz-transform-origin: right center;
   -o-transform-origin: right center;

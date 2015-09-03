@@ -72,9 +72,9 @@ $(document).ready(function(){
     $(window).scroll(function(event){
        var scroller = $(this).scrollTop();
        if (scroller-senseSpeed > previousScroll){
-          $(".menu.is-inactive .hamburger").filter(':not(:animated)').addClass('hidden');
+          $(".menu.is-inactive").filter(':not(:animated)').addClass('hidden');
        } else if (scroller+senseSpeed < previousScroll) {
-          $(".menu.is-inactive .hamburger").filter(':not(:animated)').removeClass('hidden');
+          $(".menu.is-inactive").filter(':not(:animated)').removeClass('hidden');
        }
        previousScroll = scroller;
     });
