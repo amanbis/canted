@@ -265,7 +265,7 @@ nav .menu {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
-  /*outline: 0;*/ /* Will add it back once I add focus styles */ 
+  outline: 0;
   
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
@@ -295,6 +295,11 @@ nav .menu {
 .hamburger::before, .hamburger::after {
   content: '';
   left: 0;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .hamburger::before {
@@ -313,38 +318,10 @@ nav .menu {
   transform: translateY(9px);
 }
 
-/** Visible/Invisible Menu Icon States **/
-
-.menu .origin-left {
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  -ms-transform-origin: left center;
-  transform-origin: left center;
-}
-
-.hamburger.hidden {
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -o-transform-origin: right center;
-  -ms-transform-origin: right center;
-  transform-origin: right center;
-  -webkit-transform: scaleX(0);
-  -moz-transform: scaleX(0);
-  -o-transform: scaleX(0);
-  -ms-transform: scaleX(0);
-  transform: scaleX(0);
-}
-
 /** Active/Inactive Menu and Navbar States **/
 
 .is-active > .hamburger {
-  background-color: transparent;
-  -webkit-transform-origin: center center;
-  -moz-transform-origin: center center;
-  -o-transform-origin: center center;
-  -ms-transform-origin: center center;
-  transform-origin: center center;
+    background-color: transparent;
 }
 
 .is-active > .hamburger::before {
