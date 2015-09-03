@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     $(".menu").on('click', function(evn) {
         evn.preventDefault();
+        $(this).children().toggleClass('origin-left');
         $(this).toggleClass('is-active');
         $(this).toggleClass('is-inactive');
     });
@@ -18,8 +19,8 @@ $(document).ready(function(){
     });
 
     /**
-     * This part toggles if the nav bar is active or not, 
-     * as well as the state of the menu icon.
+     * This part uses AJAX to load the content of
+     * the specific portfolio into the modal window.
      */
 
      $('.portfolio').on('click', 'a', function() {
@@ -71,9 +72,9 @@ $(document).ready(function(){
     $(window).scroll(function(event){
        var scroller = $(this).scrollTop();
        if (scroller-senseSpeed > previousScroll){
-          $(".menu.is-inactive").filter(':not(:animated)').slideUp(300);
+          $(".menu.is-inactive").filter(':not(:animated)').addClass('hidden');
        } else if (scroller+senseSpeed < previousScroll) {
-          $(".menu.is-inactive").filter(':not(:animated)').slideDown(300);
+          $(".menu.is-inactive").filter(':not(:animated)').removeClass('hidden');
        }
        previousScroll = scroller;
     });
