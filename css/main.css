@@ -766,6 +766,12 @@ nav .menu {
   -ms-transform: translateY(0);
   transform: translateY(0);
   pointer-events: auto;
+
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -ms-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -o-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
 }
 
 .modalDialog .modalContent {
