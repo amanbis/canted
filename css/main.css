@@ -767,11 +767,11 @@ nav .menu {
   transform: translateY(0);
   pointer-events: auto;
 
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
-  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
-  -ms-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
-  -o-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
-  transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.3s;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.5s;
+  -moz-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.5s;
+  -ms-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.5s;
+  -o-transition: -moz-transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.5s;
+  transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.5s;
 }
 
 .modalDialog .modalContent {
@@ -797,7 +797,7 @@ nav .menu {
 }
 
 .modalDialog .content .hr {
-  background-color: #FF8835;
+  background-color: #f05a3f;
   width: 100%;
 }
 
