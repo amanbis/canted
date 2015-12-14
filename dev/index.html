@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Aman Biswas" />
+        <meta name="description" content="Portfolio website with canted stylings." />
+
+        <title>Canted - Stylish Slanted Showcase</title>
+
+        <!-- CSS Styles -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/sticky.css">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+
+        <!-- Favicon (Courtesy of http://realfavicongenerator.net/) -->
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="manifest.json">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- jQuery Library -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Smooth Scroll -->
+        <script src="js/jquery.scrollTo.js"></script>
+    </head>
+
+    <body>
+        <!-- Content wrapper for sticky footer -->
+        <div class="wrapper">
+
+            <!-- Navigation Section -->
+            <nav>
+                <!-- Menu Button -->
+                <a href="#menu" title="Menu" class="menu is-inactive" aria-label="menu">
+                    <div class="hamburger origin-left"></div>
+                </a>
+                <!-- Navigation Links -->
+                <div class="links-container">
+                    <div class="nav-links">
+                         <div class="logo"></div>                   
+                        <ul>
+                            <li><a href="#header" class="nav-active">Home</a></li>
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>            
+                    </div>       
+                </div>
+            </nav>
+
+            <!-- Header Section -->
+            <header class="header" id="header">
+
+                <div class="logo"></div>
+
+                <div class="block">
+
+                    <!-- Center header content -->
+                    <div class="centered">
+                        <h1 class="name">Canted</h1>
+                        <div class="hr"></div>
+                        <h3 class="tagline">Stylish Slanted Showcase</h3>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- About Section -->
+            <section id="profile" class="profile spacer">
+
+                <!-- Profile heading -->
+                <div class="heading-container">
+                    <h2 class="heading">Profile</h2>
+                <div class="hr"></div>
+                </div>
+
+                <!-- Profile icons -->
+                <div class="icons">
+                    <h4>Design</h4>
+                    <h4>Development</h4>
+                    <h4>Usability</h4>
+                    <h4>Sustainability</h4>
+                </div>
+
+                <!-- Profile Content -->
+                <div class="about linkslideup">
+                    <p class="focus-line">Hello, I’m Aman, front-end developer &amp; designer based in Bangkok – I create delightful digital experiences.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>. Sed ut dui ante. Donec faucibus hendrerit sem consectetur vehicula. Mauris feugiat vulputate tortor, ut malesuada lectus placerat id. Morbi ut dignissim <a href="">mauris</a>. Fusce metus lorem, aliquet sit amet tortor et, maximus porta dui.</p>
+
+                    <p>Proin facilisis, dui elementum faucibus rhoncus, risus nunc <a href="">scelerisque</a> ligula, ut ornare nulla nibh vitae velit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse dui dui, ullamcorper at convallis nec, posuere at urna. Sed sed tempus est, a euismod mi. Fusce blandit a erat et egestas. Suspendisse vel leo nec sapien viverra lacinia.</p>
+                </div>
+
+            </section>
+
+            <!-- Portfolio Section -->
+            <section id="work" class="work spacer">
+
+                <!-- Portfolio heading -->
+                <div class="heading-container">
+                    <h2 class="heading">Work</h2>
+                    <div class="hr"></div>
+                </div>
+
+                <!-- Portfolio grid -->
+                <div class="portfolio">
+                    <a href="#openModal" data-id="gossamer"><span>Gossamer</span><span>Sumptuous Heart</span></a>
+                    <a href="#openModal" data-id="ineffable"><span>Ineffable</span><span>Evanescent Life</span></a>
+                    <a href="#openModal" data-id="chatoyant"><span>Chatoyant</span><span>Assemblage Love</span></a>
+                    <a href="#openModal" data-id="mellifluous"><span>Mellifluous</span><span>Mellifluous Will</span></a>
+                    <a href="#openModal" data-id="serendipity"><span>Serendipity</span><span>Serendipity Cut</span></a>
+                    <a href="#openModal" data-id="melange"><span>Melange</span><span>Spicy Melange</span></a>
+                </div>
+
+                <!-- Modal window of portfolio item -->
+                <div id="openModal" class="modalDialog">
+                    <a href="#close" title="Close" class="close" aria-label="close"><div class="close-icon"></div></a>
+                    <div class="load-container">
+                        <div class="loader">
+                            <div class="spinner"></div>
+                        </div>
+                    </div>
+                    <div class="modalContent"></div>
+                </div>
+
+            </section>
+
+            <!-- Push footer to bottom -->
+            <div class="push spacer"></div>
+        
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="contact" class="contact">
+            <div class="email linkslideup">
+                <h3>Have a project in mind?</h3>
+                <h3>Say <a href="mailto:hello@amanbiswas.com">hello@amanbiswas.com</a>.</h3>
+            </div>
+        </footer>
+
+        <script src="js/app.js"></script>
+
+    </body>
+
+</html>
