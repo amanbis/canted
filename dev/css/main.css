@@ -790,10 +790,15 @@ nav .menu {
 .responsive-hero {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 5em;
 }
 
 .responsive-hero img {
   width: 100%;
+}
+
+.content, .portfolio-info {
+  display: inline-block;
 }
 
 .modalDialog .content .hr {
@@ -941,9 +946,9 @@ nav .menu {
     width: 60%;
   }
 
-  .modalDialog .image {
+  .modalDialog .portfolio-info {
     float: right;
-    width: 56%;
+    width: 30%;
     padding-top: 2em;
   }
 
