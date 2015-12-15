@@ -805,6 +805,10 @@ nav .menu {
   text-align: left;
 }
 
+.portfolio-info p {
+  margin: 0;
+}
+
 .close {
   position: absolute;
   top: 2em;
@@ -923,13 +927,13 @@ nav .menu {
   }
 
   .modalDialog .content {
-    width: 60%;
+    width: 80%;
   }
 
   .modalDialog .portfolio-info {
     float: right;
-    width: 30%;
-    padding-top: 2em;
+    width: 15%;
+    padding-top: 0.5em;
   }
 
 }
