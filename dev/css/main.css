@@ -787,6 +787,11 @@ nav .menu {
   margin-bottom: 3em;
 }
 
+.responsive-hero {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .modalDialog .content .hr {
   background-color: #f05a3f;
   width: 100%;
@@ -929,7 +934,7 @@ nav .menu {
   }
 
   .modalDialog .content {
-    width: 40%;
+    width: 60%;
   }
 
   .modalDialog .image {
