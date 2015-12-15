@@ -788,8 +788,12 @@ nav .menu {
 }
 
 .responsive-hero {
-  width: 100%;
+  width: 50%;
   margin: 0 auto;
+}
+
+.responsive-hero img {
+  width: 100%;
 }
 
 .modalDialog .content .hr {
@@ -818,8 +822,8 @@ nav .menu {
 
 .close {
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 2em;
+  right: 3em;
   height: 4em;
   width: 4em;
   background-color: transparent;
