@@ -801,8 +801,8 @@ nav .menu {
   display: inline-block;
 }
 
-.modalDialog .content .content-type {
-  margin: 0.75em 0;
+.portfolio-info h4 {
+  text-align: left;
 }
 
 .close {
