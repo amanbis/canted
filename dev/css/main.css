@@ -799,6 +799,7 @@ nav .menu {
 
 .content, .portfolio-info {
   display: inline-block;
+  width: 100%;
 }
 
 .portfolio-info h4 {
@@ -807,6 +808,11 @@ nav .menu {
 
 .portfolio-info p {
   margin: 0;
+}
+
+.content-type {
+  display: inline-block;
+  width: 25%;
 }
 
 .close {
@@ -930,10 +936,16 @@ nav .menu {
     width: 80%;
   }
 
-  .modalDialog .portfolio-info {
+  .portfolio-info {
     float: right;
     width: 15%;
-    padding-top: 0.5em;
+    padding-top: 2em;
+  }
+
+  .content-type {
+    display: block;
+    width: 100%;
+    margin: 2em;
   }
 
 }
