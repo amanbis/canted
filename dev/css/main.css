@@ -781,10 +781,10 @@ nav .menu {
   max-width: 80%;
 }
 
-.modalDialog .modalContent h3 {
+.modalDialog .modalContent h2 {
   color: #f05a3f;
   margin-top: 0.5em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
 }
 
 .responsive-hero {
@@ -928,7 +928,11 @@ nav .menu {
     padding: 5em 0;
   }
 
-  .modalDialog .modalContent h3 {
+.modalContent h1 {
+  font-size: 3em;
+}
+
+.modalContent h2 {
     font-size: 1.5em;
   }
 
