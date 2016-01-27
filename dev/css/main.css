@@ -810,6 +810,24 @@ nav .menu {
   margin: 0;
 }
 
+.modalContent .hr {
+  margin: 3em auto;
+}
+
+.color-img img, .font-img img {
+  width: 100%;
+}
+
+.color-img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.font-img {
+  width: 75%;
+  margin: 0 auto;
+}
+
 .content-type {
   display: inline-block;
   width: 25%;
