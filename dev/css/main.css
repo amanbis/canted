@@ -781,7 +781,7 @@ nav .menu {
   max-width: 80%;
 }
 
-.modalDialog .modalContent h2 {
+.modalContent .heading-container h2 {
   color: #f05a3f;
   margin-top: 0.5em;
   margin-bottom: 4em;
