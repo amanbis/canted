@@ -819,16 +819,11 @@ nav .menu {
   margin-bottom: 2em;
 }
 
-.color-img img, .font-img img {
+.color-img img, .font-img img, .landing-img img {
   width: 100%;
 }
 
-.color-img {
-  width: 75%;
-  margin: 0 auto;
-}
-
-.font-img {
+.color-img, .font-img, .landing-img {
   width: 75%;
   margin: 0 auto;
 }
