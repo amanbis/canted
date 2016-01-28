@@ -815,6 +815,10 @@ nav .menu {
   margin: 3em auto;
 }
 
+.color-container h3, .font-container h3 {
+  margin-bottom: 2em;
+}
+
 .color-img img, .font-img img {
   width: 100%;
 }
