@@ -33,7 +33,7 @@ $(document).ready(function(){
             type: 'GET',
             dataType: 'html',
             success: function(result) {
-                $('.modalContent').hide().html(result).appendTo('.modalDialog').delay(400).fadeIn('slow');
+                $('.modal-content').hide().html(result).appendTo('.modal-dialog').delay(400).fadeIn('slow');
             },
             error: function(request, errorType, errorMessage) {
                 alert('Error: ' + errorType + ' with message: ' + errorMessage);
@@ -48,7 +48,7 @@ $(document).ready(function(){
         });
      });
 
-     $('.modalDialog').on('click', '.close', function() {
+     $('.modal-dialog').on('click', '.close', function() {
         $('body').removeClass('modal-open');
      });
 
