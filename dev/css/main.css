@@ -823,7 +823,8 @@ nav .menu {
   width: 100%;
 }
 
-.color-img, .font-img, .landing-img {
+.color-img, .font-img, .landing-img,
+.color-content p, .font-content p, .landing-content p {
   width: 75%;
   margin: 0 auto;
 }
