@@ -735,7 +735,7 @@ nav .menu {
 
 /* === Modal Window Styling === */
 
-.modalDialog {
+.modal-dialog {
   position: fixed;
   overflow: scroll;
   font-family: Arial, Helvetica, sans-serif;
@@ -760,7 +760,7 @@ nav .menu {
   pointer-events: none;
 }
 
-.modalDialog:target {
+.modal-dialog:target {
   /*opacity:1;*/
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -775,14 +775,14 @@ nav .menu {
   transition: transform 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000), opacity 0.5s;
 }
 
-.modalDialog .modalContent {
+.modal-dialog .modal-content {
   position: relative;
   margin: 0 auto;
   padding: 7em 0;
   max-width: 80%;
 }
 
-.modalContent .heading-container h2 {
+.modal-content .heading-container h2 {
   color: #f05a3f;
   margin-top: 0.5em;
   margin-bottom: 4em;
@@ -811,20 +811,21 @@ nav .menu {
   margin: 0;
 }
 
-.modalContent .hr {
-  margin: 3em auto;
+.modal-content .hr {
+  margin: 5em auto;
+  width: 5em;
+  background-color: #f05a3f;
 }
 
-.color-content, .font-content, .landing-content {
-  margin-bottom: 3em;
+.modal-content .content {
+  margin-bottom: 5em;
 }
 
-.color-img img, .font-img img, .landing-img img {
+.modal-content .img img {
   width: 100%;
 }
 
-.color-img, .font-img, .landing-img,
-.color-content p, .font-content p, .landing-content p {
+.modal-content .content, .modal-content .img {
   width: 75%;
   margin: 0 auto;
 }
@@ -943,19 +944,19 @@ nav .menu {
 
 @media only screen and (min-width: 760px) {
 
-  .modalDialog .modalContent {
+  .modal-dialog .modal-content {
     padding: 5em 0;
   }
 
-.modalContent h1 {
+.modal-content h1 {
   font-size: 3em;
 }
 
-.modalContent h2 {
+.modal-content h2 {
     font-size: 1.5em;
   }
 
-  .modalDialog .content {
+  .modal-dialog .content {
     width: 80%;
   }
 
