@@ -825,7 +825,7 @@ nav .menu {
   width: 100%;
 }
 
-.modal-content .content, .modal-content .img {
+.modal-content .content p, .modal-content .img {
   width: 75%;
   margin: 0 auto;
 }
